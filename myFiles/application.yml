@@ -40,4 +40,4 @@ app:
                 package: minez.identities
             rego:
               - uri: http://localhost:8080/mine-source/data-yaml
-                package: minez
+                package: mineAnil
