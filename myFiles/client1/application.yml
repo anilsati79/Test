@@ -1,0 +1,32 @@
+---
+app:
+  bundle:
+    delegates:
+      source:
+        - name: selfservice
+          data:
+            - package: mineservice
+              protocol: web
+              type: json
+              uri: http://localhost:8080/mine-source/data-yaml
+          rego:
+            - package: mineservice
+              protocol: web
+              type: file
+              uri: http://localhost:8080/mine-source/data-yaml
+"%test":
+  app:
+    bundle:
+      delegates:
+        source:
+          - name: integration-test
+            data:
+              - uri: http://localhost:8080/mine-source/data-yaml
+                type: json
+                package: minez.roles
+              - uri: http://localhost:8080/mine-source/data-yaml
+                type: file
+                package: minez.identities
+            rego:
+              - uri: http://localhost:8080/mine-source/data-yaml
+                package: mineAnilBaawa
