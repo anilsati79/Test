@@ -1,0 +1,12 @@
+---
+repoconfig:
+  consumers:
+    - name: consumer1
+      data:
+        regopackage: dev
+        protocol: web
+        url: http
+      rego:
+        regopackage: dev
+        protocol: git
+        url: http
