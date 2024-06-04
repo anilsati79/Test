@@ -1,12 +1,14 @@
 ---
-repoconfig:
-  consumers:
-    - name: consumer2
-      data:
-        regopackage: dev
-        protocol: web
-        url: http
-      rego:
-        regopackage: dev
-        protocol: git
-        url: http
+"qa":
+  repoconfig:
+    consumers:
+      - name: consumer1
+        data:
+          regopackage: dev
+          protocol: web
+          url: http
+        rego:
+          regopackage: dev
+          protocol: git
+          url: http
+

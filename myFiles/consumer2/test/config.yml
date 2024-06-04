@@ -1,12 +1,14 @@
 ---
-repoconfig:
-  consumers:
-    - name: consumer2
-      data:
-        regopackage: dev
-        protocol: web
-        url: http
-      rego:
-        regopackage: dev
-        protocol: git
-        url: http
+"test":
+  repoconfig:
+    consumers:
+      - name: consumer2
+        data:
+          regopackage: dev
+          protocol: web
+          url: http
+        rego:
+          regopackage: dev
+          protocol: git
+          url: https://github.com/anilsati79/Test/tree/main/myFiles/consumer2/test/rego
+
