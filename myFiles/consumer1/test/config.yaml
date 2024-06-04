@@ -11,4 +11,15 @@
           regopackage: test
           protocol: git
           url: https://github.com/anilsati79/Test/tree/main/myFiles/consumer1/test/rego
+repoconfig:
+  consumers:
+    - name: consumer1
+      data:
+        regopackage: test
+        protocol: web
+        url: http
+      rego:
+        regopackage: test
+        protocol: git
+        url: https://github.com/anilsati79/Test/tree/main/myFiles/consumer1/test/rego
 
