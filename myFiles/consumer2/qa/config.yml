@@ -2,7 +2,7 @@
 "qa":
   repoconfig:
     consumers:
-      - name: consumer1
+      - name: consumer2
         data:
           regopackage: dev
           protocol: web
