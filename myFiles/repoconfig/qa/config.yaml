@@ -4,10 +4,19 @@
     consumers:
       - name: consumer1
         data:
-          regopackage: dev
+          regopackage: qa
           protocol: web
           url: http
         rego:
-          regopackage: dev
+          regopackage: qa
+          protocol: git
+          url: http
+      - name: consumer2
+        data:
+          regopackage: qa
+          protocol: web
+          url: http
+        rego:
+          regopackage: qa
           protocol: git
           url: http
